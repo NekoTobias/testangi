@@ -1,0 +1,16 @@
+<div ng-show="loading">
+        <i>loading...</i>
+    </div>
+    
+    <div ng-show="!loading">
+        <h1>Hallo {{name}}</h1>
+        <input type="text" ng-model="msg">
+<button ng-click="submit()">submit</button>
+        <p>
+            Are you ready?
+            <button ng-click="setReady()">YES!</button>
+        </p>
+        <ul>
+            <li ng-repeat="ready in readys">{{ready}}</li>
+        </ul>
+    </div>
